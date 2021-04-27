@@ -90,20 +90,23 @@ def password_reset_request(request):
 			associated_users = User.objects.filter(Q(email=data))
 			if associated_users.exists():
 				for user in associated_users:
-					subject = "Password Reset Requested"
 					email_template_name = "password_reset_email.txt"
 					c = {
 					"email":user.email,
-					'domain':'127.0.0.1:8000',
-					'site_name': 'Website',
+					'domain':'esasdjangoblog.herokuapp.com',
+					'site_name': 'Django Blog',
 					"uid": urlsafe_base64_encode(force_bytes(user.pk)),
 					"user": user,
 					'token': default_token_generator.make_token(user),
 					'protocol': 'http',
 					}
-					email = render_to_string(email_template_name, c)
+					email_message = render_to_string(email_template_name, c)
 					try:
-						send_mail(subject, email, 'admin@example.com' , [user.email], fail_silently=False)
+						send_mail(subject="Password Reset Requested" ,
+							    message=email_message, 
+							    from_email='mic.oregon@gmail.com', 
+							    recipient_list=[user.email], 
+							    fail_silently=False)
 					except BadHeaderError:
 						return HttpResponse('Invalid header found.')
 					return redirect ("/password_reset/done/")
