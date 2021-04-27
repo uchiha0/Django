@@ -7,17 +7,13 @@ Weclome. This details all information necessary for understanding this 'Pre' Pro
 ######
 STATUS
 
-1. CSS static files are yet to work in production, pending issues with heroku will be resolved soon.
+1. Email functionality is limited, pending google API registration, as such password reset only works in local production.
 
-2. Email functionality is limited, pending google API registration, as such password reset only works in local production.
+2. Posts are not limited to logged in users, therefore issues of mistaken identities on actual authors of post remain. A fix is in the works
 
-3. This blog still uses local sqlite database, an upgrade is in the works.
+3. Tests are yet to be completed.
 
-4. Posts are not limited to logged in users, therefore issues of mistaken identities on actual authors of post remain.
-
-5. Tests are yet to be completed.
-
-6. All other functionality works as intended.
+4. All other functionality works as intended.
 
 ######
 You can visit this blog at: https://esasdjangoblog.herokuapp.com
