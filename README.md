@@ -7,7 +7,7 @@ Weclome. This details all information necessary for understanding this 'Pre' Pro
 ######
 STATUS
 
-1. Email functionality is limited, pending google API registration, as such password reset only works in local production.
+1. Email functionality is limited, as such password reset only works in local production.
 
 2. Issue of one user posting as another using the 'author' field has been fixed!
 
