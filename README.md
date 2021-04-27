@@ -9,7 +9,7 @@ STATUS
 
 1. Email functionality is limited, pending google API registration, as such password reset only works in local production.
 
-2. Posts are not limited to logged in users, therefore issues of mistaken identities on actual authors of post remain. A fix is in the works
+2. Issue of one user posting as another using the 'author' field has been fixed!
 
 3. Tests are yet to be completed.
 
