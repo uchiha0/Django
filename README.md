@@ -15,7 +15,11 @@ STATUS
 
 4. All other functionality works as intended.
 
+5. SECRET_KEY and other sensitive values are exposed here only for demostration purposes, the blog obfuscates all of them. 
+   You should do the same using environmental variables in case you wish to modify this blog.
+
 ######
+
 You can visit this blog at: https://esasdjangoblog.herokuapp.com
 
 Enjoy.
