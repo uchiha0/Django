@@ -9,7 +9,7 @@ STATUS
 
 1. Email functionality works in production now.
 
-2. Issue of one user posting as another use has been fixed!
+2. Issue of one user posting as another user has been fixed!
 
 3. Tests are yet to be completed.
 
